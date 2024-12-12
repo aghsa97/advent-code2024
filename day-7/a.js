@@ -47,7 +47,7 @@ function calculate_resutls(list) {
   return res;
 }
 
-function checkCombination(numbers, target) {
+function checkCombination(numbers) {
   let operatorCombination = operators.map((v) => [v]);
   for (let i = 1; i < numbers.length - 1; i++) {
     operatorCombination = operatorCombination.flatMap((comp) =>
